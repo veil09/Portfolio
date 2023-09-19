@@ -260,6 +260,9 @@
         <p>Copyright ® Aaron Dave Herezano</p>
       </div>
     </div>
+    <audio id="song">
+      <source src="src/(FREE) Lo-fi Type Beat - _Lovely_.mp3" />
+    </audio>
     <script>
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
@@ -283,6 +286,10 @@
       function closemenu() {
         sidemenu.styke.right = "-200px";
       }
+      window.addEventListener("click", () => {
+  document.getElementById("song").play();
+});
+
     </script>
   </body>
 </html>
